@@ -3,7 +3,11 @@ name: React App Deploy
 on:
   push:
     branches:
-      - "master" # Triggers the workflow on push event only for the master branch
+      - "master"
+  pull_request:
+    branches:
+      - "master"
+     # Triggers the workflow on push event only for the master branch
 
 jobs:
   build:
