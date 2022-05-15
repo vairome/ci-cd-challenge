@@ -7,7 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CI/CD Challenge by Byron Murillo.
+          <h1>
+            CI/CD Challenge by Byron Murillo.
+          </h1>
         </p>
         
       </header>
