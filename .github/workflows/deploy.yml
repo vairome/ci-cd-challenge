@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest #This line refers to the system that runs the action
-    concurrency: ci-${{ github.ref }}
 
     strategy:
       matrix:
@@ -21,7 +20,6 @@ jobs:
 
       - name: Install and build
         run: |
-          npm ci
           npm install
           npm run build
          #Here we run our scripts
