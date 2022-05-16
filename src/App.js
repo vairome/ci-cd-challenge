@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <h1>
-            CI/CD Challenge by Byron Murillo.
+            CI/CD Challenge by Byron Murillo c:
           </h1>
         </p>
         
