@@ -17,7 +17,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v1 #This is a special action provided by github to make a checkout of the v1 
+        uses: actions/checkout@v2 #This is a special action provided by github to make a checkout of the v1 
 
       - name: Install and build
         run: |
