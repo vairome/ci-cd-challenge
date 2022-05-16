@@ -26,4 +26,4 @@ jobs:
         with:
           branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # The folder the action should deploy.        
+          folder: build # The folder the action should deploy.        
