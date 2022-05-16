@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest #This line refers to the system that runs the action
+    concurrency: ci-${{ github.ref }}
 
     strategy:
       matrix:
@@ -19,7 +20,11 @@ jobs:
         uses: actions/checkout@v1 #This is a special action provided by github to make a checkout of the v1 
 
       - name: Install and build
-        run: npm install && npm run build #Here we run our scripts
+        run: |
+          npm ci
+          npm install
+          npm run build
+         #Here we run our scripts
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1 #This is a marketplace action to publish pages to github.io
